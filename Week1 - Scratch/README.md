@@ -1,4 +1,4 @@
-Penalty Shootout Game By <a href="https://scratch.mit.edu/">Scratch</a>
+Penalty Shootout Game On <a href="https://scratch.mit.edu/projects/1040835710/">Scratch</a>
 
 The player will use arrow keys to control the direction of the ball, press: <br> 
 ↑ to shoot the ball in the middle. <br>
