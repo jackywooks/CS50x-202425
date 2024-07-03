@@ -33,3 +33,15 @@ The goalkeeper will guess your direction to save the ball. If either the player 
 <h2> Week 3 Problem Set - Algorithms</h2>
 <h3> Sort </h3>
 <p> Get myself familiarised with the sorting algorithms. Bubble Sort is useful to check for sorted array, Merge Sort has the lowest time complexity of O(nlogn) and the sorting time for selection sort is consistent </p>
+<p> I also implement the sorting algorithms in C for practise <a href= "https://github.com/jackywooks/CS50x-2024/tree/main/Week3%20-%20Algorithm/Algorithm">Sorting Algorithms</a></p>
+<h3> Plurality </h3>
+<p> Complete a program for the first past the post voting system </p>
+<h3> Tideman </h3>
+<p> This is acutally one of the biggest challenge in this CS50 course since the beginning. In this program, I will firstly need to store the preference between candidate. Store the winner and loser in a pair array. Sort the pair array by the preference power, i.e. votes margin. I use merge Sort here. And then locked the pair to prevent creating cycles in the graph. And finally print the winner </p>
+<p> Thanks to CS50 that they break down the problem into small and managerable pieces or else it would be very hard for a beginner to code it.</p>
+
+<h2> Week 4 Problem Set - Memory</h2>
+<h3> Volume </h3>
+<p> Introduction of pointer this week, we are now handling WAV file to read the WAV file, copy its header and then output the audio with multipcation of the input factor.</p>
+<h3> Filter </h3>
+<p> Another Challenge to handle filter in .bmp file. A .bmp file also has headers and content store afte the header. In this problem set, we will need to add filter to the picture by manipulating the content of the image (content after header). To grayscale, blur or make a reflection to an image is not hard at all. But detecting edges is harder and we will need to use the Sobel Operator. It is amazing that I can use C to create filter on image. </p>
