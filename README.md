@@ -1,6 +1,7 @@
 # CS50x
 
 CS50x through edX Progress
+This is my journey to finish the CS50
 
 <h2> Week 0 Problem Set - Scratch </h2>
 <h3> Sratch - <a href="https://scratch.mit.edu/projects/1040835710/">Penalty ShootOut Game</a> </h3>
