@@ -46,6 +46,6 @@ The goalkeeper will guess your direction to save the ball. If either the player 
 <h3> <a href="https://github.com/jackywooks/CS50x-2024/tree/main/Week4%20-%20Memory/recover">Recover</a> </h3>
 <p> A smaller functino compared to the filter. It is very interesting that I can now recover jpeg file even if it is deleted. </p>
 
-<h2> Week 5 Problem Set - Inheritance</h2>
+<h2> Week 5 Problem Set - Data Structure</h2>
 <h3> <a href= "https://github.com/jackywooks/CS50x-2024/tree/main/Week5%20-%20Data%20Structure/inheritance"> Inheritance </a> </h3>
 <p> Further strengthen knowledge on pointer, with bloodtype Inheritance. Remind me of the biology class in the secondary school.</p>
