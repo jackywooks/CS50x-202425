@@ -49,3 +49,5 @@ The goalkeeper will guess your direction to save the ball. If either the player 
 <h2> Week 5 Problem Set - Data Structure</h2>
 <h3> <a href= "https://github.com/jackywooks/CS50x-2024/tree/main/Week5%20-%20Data%20Structure/inheritance"> Inheritance </a> </h3>
 <p> Further strengthen my knowledge on pointer, with the bloodtype Inheritance. Remind me of the biology class in the secondary school. Pretty easy one with the hint from the distributed code. Warm-up to the Speller I guess.</p>
+<h3> <a href= "https://github.com/jackywooks/CS50x-2024/tree/main/Week5%20-%20Data%20Structure/speller"> Speller </a> </h3>
+<p> This is easier than I thought, when I can tackle the problem in smaller and managable pieces. It is a really good exercise to implement a hash table searching algorithm and also for me to understand how a hash table worked and how important a hash function is. </p>
