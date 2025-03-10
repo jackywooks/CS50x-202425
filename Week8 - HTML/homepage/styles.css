@@ -1,0 +1,179 @@
+html {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+div.hero,
+body>footer {
+    background-color: #1f2937;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+/* nav bar section */
+
+nav li>a,
+.hero p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+ul.nav-left li {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1vw 10vw;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    color: #f9faf8;
+    margin: 1vw;
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    padding: 5vw 10vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-left {
+    width: 35vw;
+}
+
+.hero p {
+    margin-top: 0;
+}
+
+
+
+.hero img {
+    width: 35vw;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    padding: 0.8vw 2vw;
+    border-radius: 0.5vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* info section */
+.info {
+    text-align: center;
+    padding: 2vw 10vw;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vw;
+}
+
+.box img {
+    object-fit: cover;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 2vw;
+    border: 0.3vw solid #3882f6;
+}
+
+.box {
+    width: 12vw;
+}
+
+/* quote section */
+
+.quote {
+    background-color: #e5e7eb;
+    padding: 5vw 15vw;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+}
+
+.quote footer {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* banner section */
+
+.banner {
+    padding: 5vw 10vw;
+}
+
+.bannercontainer {
+    background-color: #3882f6;
+    color: white;
+    padding: 2vw 10vw;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.banner-left p {
+    margin-top: 0.5vw;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.banner-right button {
+    border: 1px solid white;
+}
+
+/* footer section */
+
+body>footer {
+    text-align: center;
+    color: white;
+    padding: 1.5vw;
+}

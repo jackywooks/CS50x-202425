@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3 id="q1"> What is the name of the CS50 Professor?</h3>
+                <button class="right">David Malan</button>
+                <button class="wrong">Dave Malan</button>
+                <button class="wrong">David Mason</button>
+                <button class="wrong">Dave Mason</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3 id="q2"> What is the course?</h3>
+                <input id="q2Answer" type="text"></input>
+                <button id="q2Check">Check</button>
+
+            </div>
+        </div>
+    </body>
+    <script>
+        // TODO: Add code to check answers to questions
+        const questionOne = document.querySelector("#q1");
+        const questionTwo = document.querySelector("#q2");
+        const right_answer = document.querySelector(".right");
+        const wrong_answers = document.querySelectorAll(".wrong");
+        const q2_check = document.querySelector("#q2Check");
+        const q2_answer = document.querySelector("#q2Answer");
+        const p = document.createElement("p");
+
+
+        right_answer.addEventListener("click", (e) => {
+            right_answer.style.backgroundColor = "green";
+            p.textContent = "Correct";
+            questionOne.appendChild(p);
+        })
+
+        wrong_answers.forEach(wrong_anwser => {
+            wrong_anwser.addEventListener("click", (e) => {
+                e.target.style.backgroundColor = "red";
+                p.textContent = "Incorrect";
+                questionOne.appendChild(p);
+            });
+        });
+
+        q2_check.addEventListener("click", (e) => {
+            console.log(q2_answer.value);
+            if (q2_answer.value === "CS50") {
+                q2_answer.style.backgroundColor = "green";
+                p.textContent = "Correct";
+                questionTwo.appendChild(p);
+            } else {
+                q2_answer.style.backgroundColor = "red";
+                p.textContent = "Incorrect";
+                questionTwo.appendChild(p);
+            }
+
+
+        })
+    </script>
+
+</html>
