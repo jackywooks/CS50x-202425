@@ -1,0 +1,13 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
++-------------+--------------+-------------------+
+| AVG(energy) | AVG(valence) | AVG(danceability) |
++-------------+--------------+-------------------+
+| 0.65906     | 0.484443     | 0.71646           |
++-------------+--------------+-------------------+
+From the average value, seems like the person preferred energetic, dance songs. Maybe he/she likes disco music
+
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener.
+What better ways of calculating this aura would you propose?
+I feel like averaging a value of the TOP100 may not be representative enough.
+Think we should weigh the songs by the listening minutes/times, and also find the mode of the music genre the listener preferred.
