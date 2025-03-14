@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3 mw-100 d-inline-flex">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Stock's Symbol (AAPL)" type="text">
+            <button class="btn btn-primary ms-3" type="submit" name="action" value="quote">Quote</button>
+        </div>
+    </form>
+    <h2>Quote History</h2>
+    <form action="/quote" method="post">
+        <button class="btn btn-primary ms-3 float-end" name="action" value="refresh">Refresh</button>
+    </form>
+    <form action="/quote" method="post">
+        <button class="btn btn-primary ms-3 float-end" name="action" value="clear">Clear</button>
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Stock Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- TODO: Loop through the result to display the quote history -->
+            {% for stock in result %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.name }}</td>
+                    <td>{{ stock.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

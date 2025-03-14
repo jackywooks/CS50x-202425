@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    You are registered!?
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Sports</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for people in regRecord %}
+            <tr>
+                <td>{{ people.name }}</td>
+                <td>{{ people.sport }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

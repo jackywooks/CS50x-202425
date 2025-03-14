@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}
+hello, {{name}}
+{% endblock %}
+
+{% block body %}
+    hello,
+    {% if name %}
+        {{name}}
+    {% else %}
+        world
+    {% endif %}
+
+    {{name}}
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Stock Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Buy In Price</th>
+                <th class="text-end">Current Price</th>
+                <th class="text-end">Profit/Loss</th>
+                <th class="text-end">Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- TODO: Loop through the result to display the quote history -->
+            {% set ns = namespace() %}
+            {% set ns.total = 0 %}
+            {% for stock in portfolio %}
+                <tr>
+                    {% set lineTotal = 0 %}
+                    <td class="text-start">{{ stock.get("symbol") }}</td>
+                    <td class="text-end">{{ stock.get("shares") }}</td>
+                    <td class="text-end">{{ stock.get("average_price") | usd }}</td>
+                    <td class="text-end">{{ stock.get("current_price") | usd }}</td>
+                    <td class="text-end {% if stock.average_price - stock.current_price  >= 0 %}text-success{% else %}text-danger{% endif %}">{{ ((stock.get("average_price") | float - stock.get("current_price") | float )* stock.get("shares")) | usd }}</td>
+                    {% set lineTotal = stock.get("current_price") * stock.get("shares") %}
+                    <td class="text-end">{{ lineTotal | usd }}</td>
+                    {% set ns.total = ns.total + lineTotal %}
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end " colspan="5">Cash</td>
+                <td class="border-0 text-end">{{ cash | usd  }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="5">TOTAL</td>
+                <td class="border-0 w-bold text-end">{{ (ns.total + cash) | usd  }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
