@@ -56,3 +56,11 @@ The goalkeeper will guess your direction to save the ball. If either the player 
 <h2> Week 7 Problem Set - SQL</h2>
 <h2> Week 8 Problem Set - HTML</h2>
 <p> As I am a computer programming student, SQL, Python version of the previous coded C program, and  HTML, CSS, and JavaScript are like a breeze for me. </p>
+
+<h2> Week 9 Problem Set - HTML</h2>
+<h3> <a href= "https://github.com/jackywooks/CS50x-202425/tree/main/Week9%20-%20Flask/Birthdays"> Birthday </a> </h3>
+<p>This is a very easy one, a warm-up I supposed, to add data in SQLite Database, and display them back</p>
+![image](https://github.com/user-attachments/assets/a53a9237-c768-4820-85a6-aba0c825cff2)
+<h3> <a href= "https://github.com/jackywooks/CS50x-Finance"> Finance </a> </h3>
+<p> This is by far the most complex CS50, frontend to database website</p>
+<p> By utilizing Flask, a website stock trading application is created.</p>
